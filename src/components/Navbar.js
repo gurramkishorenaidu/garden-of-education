@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon,  XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -36,7 +36,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  {/* <img
+                  <img
                     className="block h-8 w-28 lg:hidden"
                     // src="https://res.cloudinary.com/dwtumnk08/image/upload/v1670314805/GodLogo_moa4xt.jpg"
                     alt="Your Company"
@@ -44,7 +44,7 @@ export default function Navbar() {
                   <img
                     className="hidden h-8 w-28 lg:block"
                     // src="https://res.cloudinary.com/dwtumnk08/image/upload/v1670314805/GodLogo_moa4xt.jpg"
-                    alt="Your Company" */}
+                    alt="Your Company"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">

@@ -156,7 +156,7 @@ export default function Contact() {
               </dl>
               <ul className="mt-8 flex space-x-12">
                 <li>
-                  <a className="text-teal-200 hover:text-teal-100" href="#">
+                  <a className="text-teal-200 hover:text-teal-100" href="https://www.facebook.com/">
                     <span className="sr-only">Facebook</span>
                     <svg
                       className="w-7 h-7"
@@ -174,7 +174,7 @@ export default function Contact() {
                 </li>
 
                 <li>
-                  <a className="text-teal-200 hover:text-teal-100" href="#">
+                  <a className="text-teal-200 hover:text-teal-100" href="https://www.facebook.com/">
                     <span className="sr-only">Facebook</span>
                     <svg
                       className="w-7 h-7"
@@ -193,7 +193,7 @@ export default function Contact() {
                 {/* instagram */}
 
                 <li>
-                  <a className="text-teal-200 hover:text-teal-100" href="#">
+                  <a className="text-teal-200 hover:text-teal-100" href="https://www.facebook.com/">
                     <span className="sr-only">Twitter</span>
                     <svg
                       className="w-7 h-7"
