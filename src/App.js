@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 
 
 
+
 function App() {
   return (
     <div className="bg-gray-50">     
@@ -23,6 +24,7 @@ function App() {
           <Route path="/faq" element={<Faq />} />          
           <Route path="/pricing" element={<Pricing />} /> 
           <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/test" element={<Test />} />       */}
                 
                 
         </Routes>

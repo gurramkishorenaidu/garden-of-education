@@ -5,9 +5,9 @@ const Faq = () => {
   return (
     <div className="max-w-[60%] m-auto pt-12 bg-gray-50">
       <h1 className="text-4xl font-extrabold text-gray-900 pb-8 text-center">
-        <span className="text-red-500">F</span>requently{" "}
-        <span className="text-red-500">A</span>sked{" "}
-        <span className="text-red-500">Q</span>uestions
+        <span className="text-green-500">F</span>requently{" "}
+        <span className="text-green-500">A</span>sked{" "}
+        <span className="text-green-500">Q</span>uestions
       </h1>
       <Accordion>
         <Accordion.Panel>
