@@ -34,6 +34,43 @@ const Faq = () => {
         </Accordion.Panel>
         <Accordion.Panel>
           <Accordion.Title>
+            Is there a Accordion file available?
+          </Accordion.Title>
+          <Accordion.Content>
+            <p className="mb-2 text-gray-500 dark:text-gray-400">
+              Accordion is first conceptualized and designed using the Accordion
+              software so everything you see in the library has a design
+              equivalent in our Accordion file.
+            </p>
+          </Accordion.Content>
+        </Accordion.Panel>
+        
+        <Accordion.Panel>
+          <Accordion.Title>
+            Is there a Accordion file available?
+          </Accordion.Title>
+          <Accordion.Content>
+            <p className="mb-2 text-gray-500 dark:text-gray-400">
+              Accordion is first conceptualized and designed using the Accordion
+              software so everything you see in the library has a design
+              equivalent in our Accordion file.
+            </p>
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>
+            Is there a Accordion file available?
+          </Accordion.Title>
+          <Accordion.Content>
+            <p className="mb-2 text-gray-500 dark:text-gray-400">
+              Accordion is first conceptualized and designed using the Accordion
+              software so everything you see in the library has a design
+              equivalent in our Accordion file.
+            </p>
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>
             What are the differences between Accordion and Tailwind UI?
           </Accordion.Title>
           <Accordion.Content>

@@ -6,6 +6,8 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Programs from "./pages/Programs";
+
 
 
 
@@ -25,7 +27,8 @@ function App() {
           <Route path="/pricing" element={<Pricing />} /> 
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/test" element={<Test />} />       */}
-                
+          <Route path="/programs" element={<Programs />} />
+                 
                 
         </Routes>
         <Footer />
