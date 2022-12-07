@@ -5,7 +5,7 @@ import { Bars3Icon,  XMarkIcon } from "@heroicons/react/24/outline";
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "About Us", href: "about", current: false },
-  { name: "Programs", href: "programs", current: false },
+  { name: "Online Tuition", href: "online-tuition", current: false },
   { name: "Pricing", href: "pricing", current: false },
   { name: "FAQ", href: "faq", current: false },
   { name: "Contact", href: "contact", current: false },
@@ -48,7 +48,7 @@ export default function Navbar() {
                   /> */}
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 uppercase">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -89,11 +89,15 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+              
             </div>
           </Disclosure.Panel>
+          <p className="mr-32 bg-red-500 py-[14px] px-3 uppercase font-medium text-gray-50 cursor-pointer text-sm">Click Here to Become A Tutor</p>
         </>
       )}
-    </Disclosure>
+      
+    </Disclosure> 
+    
    
   );
 }
