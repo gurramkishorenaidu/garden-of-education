@@ -1,4 +1,3 @@
-
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { PhoneIcon } from  "@heroicons/react/24/outline";
@@ -6,9 +5,9 @@ import { PhoneIcon } from  "@heroicons/react/24/outline";
 
 export default function Contact() {
   return (
-    <div className="bg-gray-100 max-w-[75%] m-auto">
+    <div className="bg-gray-50 max-w-[70%] m-auto">
       <Popover as="header" className="relative">
-        <div className="bg-warm-gray-100">
+        <div className="bg-gray-50">
           <nav
             className="relative max-w-7xl mx-auto flex items-center justify-between pt-6 px-6 xl:px-8"
             aria-label="Global"
@@ -32,13 +31,7 @@ export default function Contact() {
           >
             <div className="rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
-                <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=teal&shade=500"
-                    alt=""
-                  />
-                </div>
+                
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-warm-gray-400 hover:bg-warm-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500">
                     <span className="sr-only">Close menu</span>
@@ -68,7 +61,7 @@ export default function Contact() {
 
         {/* Contact section */}
         <section
-          className="relative bg-white"
+          className="relative bg-gray-50"
           aria-labelledby="contact-heading"
         >
           <div

@@ -10,8 +10,6 @@ import Programs from "./pages/Programs";
 
 
 
-
-
 function App() {
   return (
     <div className="bg-gray-50">     
@@ -28,7 +26,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/test" element={<Test />} />       */}
           <Route path="/programs" element={<Programs />} />
-                 
+          
+                       
                 
         </Routes>
         <Footer />
