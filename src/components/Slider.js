@@ -3,11 +3,11 @@ import { Carousel } from "flowbite-react";
 
 const Slider = () => {
   return (
-    <div className="h-56 sm:h-64 xl:h-56 2xl:h-64 max-w-[70%] m-auto mt-64 bg-gray-100">
+    <div className="h-56 sm:h-64 xl:h-56 2xl:h-64 max-w-[70%] m-auto mt-64 bg-gray-50">
       <Carousel>
         
         <div className="mx-auto max-w-4xl px-8 py-8">
-          <section className="rounded-lg bg-gray-100 p-8">
+          <section className="rounded-lg bg-gray-50 p-8">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 justify-center">
               <img
                 alt="Man"
@@ -33,7 +33,7 @@ const Slider = () => {
           </section>
         </div>
         <div className="mx-auto max-w-4xl px-4 py-8">
-          <section className="rounded-lg bg-gray-100 p-8">
+          <section className="rounded-lg bg-gray-50 p-8">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
             <img
                 alt="Man"
@@ -59,7 +59,7 @@ const Slider = () => {
           </section>
         </div>
         <div className="mx-auto max-w-4xl px-4 py-8">
-          <section className="rounded-lg bg-gray-100 p-8">
+          <section className="rounded-lg bg-gray-50 p-8">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
             <img
                 alt="Man"
@@ -85,7 +85,7 @@ const Slider = () => {
           </section>
         </div>
         <div className="mx-auto max-w-4xl px-4 py-8">
-          <section className="rounded-lg bg-gray-100 p-8">
+          <section className="rounded-lg bg-gray-50 p-8">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
             <img
                 alt="Man"
@@ -111,7 +111,7 @@ const Slider = () => {
           </section>
         </div>
         <div className="mx-auto max-w-4xl px-4 py-8">
-          <section className="rounded-lg bg-gray-100 p-8">
+          <section className="rounded-lg bg-gray-50 p-8">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
             <img
                 alt="Man"

@@ -1,14 +1,15 @@
 import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon,  XMarkIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About Us", href: "about", current: false },
-  { name: "Online Tuition", href: "online-tuition", current: false },
-  { name: "Pricing", href: "pricing", current: false },
-  { name: "FAQ", href: "faq", current: false },
-  { name: "Contact", href: "contact", current: false },
+  { name: "Home", to: "/", current: true },
+  { name: "About Us", to: "about", current: false },
+  { name: "Online Tuition", to: "online-tuition", current: false },
+  { name: "Pricing", to: "pricing", current: false },
+  { name: "FAQ", to: "faq", current: false },
+  { name: "Contact", to: "contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -50,19 +51,20 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4 uppercase">
                     {navigation.map((item) => (
-                      <a
+                      <NavLink
                         key={item.name}
-                        href={item.href}
+                        to={item.to}
                         className={classNames(
                           item.current
                             ? "bg-green-500 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "px-3 py-3 text-sm font-medium"
+                          "px-3 py-[14px] text-sm font-medium",
+                          
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </NavLink>
                     ))}
                   </div>
                 </div>
@@ -77,7 +79,7 @@ export default function Navbar() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  to={item.to}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
@@ -87,12 +89,13 @@ export default function Navbar() {
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
+                  
                 </Disclosure.Button>
               ))}
               
             </div>
           </Disclosure.Panel>
-          <p className="mr-32 bg-red-500 py-[14px] px-3 uppercase font-medium text-gray-50 cursor-pointer text-sm">Click Here to Become A Tutor</p>
+          <p className="mr-32 bg-yellow-500 py-[14px] px-3 uppercase font-medium text-gray-50 cursor-pointer text-sm">Click Here to Become A Tutor</p>
         </>
       )}
       

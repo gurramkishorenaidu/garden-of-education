@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Programs from "./pages/Programs";
+// import Navbar1 from "./components/Navbar1";
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Router>
       {/* <Header /> */}
       <Navbar />
+      {/* <Navbar1 /> */}
       
      
         <Routes>
