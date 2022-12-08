@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
-import { Bars3Icon,  XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 
 const navigation = [
@@ -18,8 +18,10 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    
-    <Disclosure as="nav" className="bg-gray-800 flex justify-between items-center sticky top-0 z-20">
+    <Disclosure
+      as="nav"
+      className="bg-gray-800 flex justify-between items-center sticky top-0 z-20"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -58,8 +60,7 @@ export default function Navbar() {
                           item.current
                             ? "bg-green-500 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "px-3 py-[14px] text-sm font-medium",
-                          
+                          "px-3 py-[14px] text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -69,7 +70,6 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
 
@@ -89,18 +89,18 @@ export default function Navbar() {
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                  
                 </Disclosure.Button>
               ))}
-              
             </div>
           </Disclosure.Panel>
-          <p className="mr-32 bg-yellow-500 py-[14px] px-3 uppercase font-medium text-gray-50 cursor-pointer text-sm">Click Here to Become A Tutor</p>
+          <NavLink
+            to="/register"
+            className="mr-32 bg-yellow-500 py-[14px] px-3 uppercase font-medium text-gray-50 cursor-pointer text-sm"
+          >
+            Click Here to Become A Tutor
+          </NavLink>
         </>
       )}
-      
-    </Disclosure> 
-    
-   
+    </Disclosure>
   );
 }

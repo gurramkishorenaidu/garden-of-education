@@ -3,7 +3,7 @@ import { Carousel } from "flowbite-react";
 
 const Slider = () => {
   return (
-    <div className="h-56 sm:h-64 xl:h-56 2xl:h-64 max-w-[70%] m-auto mt-64 bg-gray-50">
+    <div className="h-56 sm:h-64 xl:h-56 2xl:h-64 max-w-[70%] m-auto mt-4 bg-gray-50">
       <Carousel>
         
         <div className="mx-auto max-w-4xl px-8 py-8">
