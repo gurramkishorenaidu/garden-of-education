@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import Programs from "./pages/Programs";
 // import Navbar1 from "./components/Navbar1";
 import Register from "./pages/Register";
+import Dropdown  from "./pages/Dropdown";
+
 
 function App() {
   return (
@@ -27,7 +29,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/test" element={<Test />} />       */}
           <Route path="/online-tuition" element={<Programs />} />
-          <Route path="/register" element={<Register />} />                
+          <Route path="/register" element={<Register />} />     
+          <Route path="/dropdown" element={<Dropdown />} />             
                        
                 
         </Routes>

@@ -8,7 +8,7 @@ const Register = () => {
       <div className="text-3xl font-semibold mb-4 text-gray-700 mt-16">
         Become A Tutor
       </div>
-      <img src={register} alt="banner" className="h-64 w-full bg-green-100 p-2" />
+      <img src={register} alt="banner" className="h-64 w-full bg-teal-500 p-2" />
       <div className="grid grid-cols-2 gap-x-4 mt-6">
         {/* first div */}
         <div>

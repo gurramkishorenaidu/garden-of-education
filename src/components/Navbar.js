@@ -95,7 +95,7 @@ export default function Navbar() {
           </Disclosure.Panel>
           <NavLink
             to="/register"
-            className="mr-32 bg-yellow-500 py-[14px] px-3 uppercase font-medium text-gray-50 cursor-pointer text-sm"
+            className="mr-32 bg-[#F48225] py-[14px] px-3 uppercase font-medium text-gray-50 cursor-pointer text-sm"
           >
             Click Here to Become A Tutor
           </NavLink>
