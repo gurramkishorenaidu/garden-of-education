@@ -9,16 +9,23 @@ import Footer from "./components/Footer";
 import Programs from "./pages/Programs";
 // import Navbar1 from "./components/Navbar1";
 import Register from "./pages/Register";
-import Dropdown  from "./pages/Dropdown";
+import Dropdown from "./pages/Dropdown";
+import English from "./pages/English";
+
+
+// import TopNavbar from "./components/TopNavbar";
 
 
 function App() {
   return (
-    <div className="bg-gray-50">     
+    <div className="bg-gray-50 min-h-screen">     
       <Router>
       {/* <Header /> */}
+      {/* <TopNavbar /> */}
+      
       <Navbar />
       {/* <Navbar1 /> */}
+    
       
      
         <Routes>
@@ -30,7 +37,10 @@ function App() {
           {/* <Route path="/test" element={<Test />} />       */}
           <Route path="/online-tuition" element={<Programs />} />
           <Route path="/register" element={<Register />} />     
-          <Route path="/dropdown" element={<Dropdown />} />             
+          <Route path="/dropdown" element={<Dropdown />} />   
+          <Route path="/english" element={<English />} />     
+          
+              
                        
                 
         </Routes>

@@ -5,14 +5,14 @@ import Slider from "../components/Slider";
 const Register = () => {
   return (
     <div className="max-w-[80%] m-auto">
-      <div className="text-3xl font-semibold mb-4 text-gray-700 mt-16">
+      <div className="text-3xl font-semibold mb-4 text-gray-700 mt-10">
         Become A Tutor
       </div>
       <img src={register} alt="banner" className="h-64 w-full bg-teal-500 p-2" />
       <div className="grid grid-cols-2 gap-x-4 mt-6">
         {/* first div */}
         <div>
-          <p className="text-3xl font-semibold mt-8">
+          <p className="text-3xl font-semibold mt-4">
             Do you love teaching children and have the required skill
           </p>
           <p className="pt-6">
@@ -42,7 +42,7 @@ const Register = () => {
         {/* registration section */}
         <div>
           <section class="bg-gray-50 dark:bg-gray-900">
-            <div class="px-6 py-8 mx-auto md:h-screen lg:py-10">
+            <div class="px-6 py-8 mx-auto md:h-screen lg:py-6">
               {/* <a
               href="#"
               class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
