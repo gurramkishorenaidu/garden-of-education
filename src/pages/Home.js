@@ -5,10 +5,7 @@ import * as Yup from "yup";
 // import Slider from "../components/Slider";
 import image from "../assets/undraw_teaching.svg";
 // import Counter from "../components/Counter";
-import Whatsapp from "../components/Whatsapp";
 
-import { faWhatsapp } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Slider1 from "../components/Slider1";
 
 const gradeOptions = [
@@ -190,7 +187,7 @@ const Home = () => {
       </div>
       <Slider1 />
       {/* <Counter /> */}
-      {/* <Whatsapp /> */}
+      
       {/* <FontAwesomeIcon icon={faWhatsapp} /> */}
     </>
   );

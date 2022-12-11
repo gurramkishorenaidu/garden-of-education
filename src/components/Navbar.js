@@ -1,20 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
 
 const Navbar = () => {
+
+  const [active, setActive] = useState('a');
+
   return (
     <nav className="flex justify-evenly items-center m-auto h-12 bg-gray-800 text-gray-300 font-medium text-sm sticky top-0 z-50">
       <div className="max-w-7xl flex space-x-32">
         <div className="ml-32">
           <ul className="flex justify-center items-center space-x-4">
             <Link to="/">
-              <li className="cursor-pointer hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white p-[14px]">
+              <li className={`block mt-4 lg:inline-block lg:mt-0 text-white ${active === 'a' ? 'bg-green-500' : 'hover:bg-green-500'} px-4 py-[14px] mr-4`} onClick={() => setActive('a')}>
+              
                 HOME
               </li>
             </Link>
             <Link to="/about">
-              <li className="cursor-pointer hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white p-[14px]">
+              <li className={`block mt-4 lg:inline-block lg:mt-0 text-white ${active === 'b' ? 'bg-green-500' : 'hover:bg-green-500'} px-4 py-[14px] mr-4`} onClick={() => setActive('b')}>
                 ABOUT US
               </li>
             </Link>
@@ -35,7 +40,8 @@ const Navbar = () => {
             <div className="p-0">
               <div className="group/main relative inline-block">
                 <Link to="/online-tuition">
-                  <div className="inline-flex items-center py-[14px] px-4 font-semibold text-gray-300 hover:bg-green-500 cursor-pointer hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <div className={`block mt-4 lg:inline-block lg:mt-0 text-white ${active === 'c' ? 'bg-green-500' : 'hover:bg-green-500'} px-4 py-[14px] mr2`} onClick={() => setActive('c')}>
+                    <div className="flex items-center justify-center">
                     <span className="mr-1">ONLINE TUITION</span>
                     <svg
                       className="h-4 w-4 fill-current stroke-cyan-500"
@@ -44,6 +50,7 @@ const Navbar = () => {
                     >
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
                     </svg>
+                    </div>
                   </div>
                 </Link>
                 <div className="w-max">
@@ -374,17 +381,17 @@ const Navbar = () => {
             </div>
 
             <Link to="/pricing">
-              <li className="cursor-pointer hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white p-[14px]">
+              <li className={`block mt-4 lg:inline-block lg:mt-0 text-white ${active === 'd' ? 'bg-green-500' : 'hover:bg-green-500'} px-4 py-[14px] mr-4`} onClick={() => setActive('d')}>
                 PRICING
               </li>
             </Link>
             <Link to="/faq">
-              <li className="cursor-pointer hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white p-[14px]">
+              <li className={`block mt-4 lg:inline-block lg:mt-0 text-white ${active === 'e' ? 'bg-green-500' : 'hover:bg-green-500'} px-4 py-[14px] mr-4`} onClick={() => setActive('e')}>
                 FAQ
               </li>
             </Link>
             <Link to="/contact">
-              <li className="cursor-pointer hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white p-[14px]">
+              <li className={`block mt-4 lg:inline-block lg:mt-0 text-white ${active === 'f' ? 'bg-green-500' : 'hover:bg-green-500'} px-4 py-[14px] mr-4`} onClick={() => setActive('f')}>
                 CONTACT
               </li>
             </Link>

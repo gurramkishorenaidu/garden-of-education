@@ -1,13 +1,22 @@
-// import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faWhatsapp } from '@fortawesome/free-solid-svg-icons';
+const Whatsapp = () => {
+  return (
+    
+      <a
+        href="https://wa.me/YOUR_PHONE_NUMBER"
+        target="_blank"
+        className="fixed bottom-0 right-0 mb-4 mr-4 animate-bounce"
+      >
+        <img
+          src="https://cdn.svgporn.com/logos/whatsapp-icon.svg"
+          alt="WhatsApp logo"
+          className="w-8 h-8"
+        />
+      </a>
+    
+  );
+};
 
-
-// const Whatsapp = () => {
-//   return (
-//     <FontAwesomeIcon icon={faWhatsapp} />
-//   );
-// };
-
-// export default Whatsapp;
+export default Whatsapp;
