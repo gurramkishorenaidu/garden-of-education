@@ -1,6 +1,6 @@
 import React from "react";
 import register from "../assets/undraw_teaching.svg";
-import Slider from "../components/Slider";
+import Slider from "../components/Slider1";
 
 const Register = () => {
   return (
