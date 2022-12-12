@@ -12,6 +12,7 @@ import Register from "./pages/Register";
 import Dropdown from "./pages/Dropdown";
 import English from "./pages/English";
 import Whatsapp from "./components/Whatsapp";
+import LottieAnimation from "./pages/LottieAnimation";
 
 // import TopNavbar from "./components/TopNavbar";
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/dropdown" element={<Dropdown />} />
           <Route path="/english" element={<English />} />
+          <Route path="/lottie" element={<LottieAnimation />} />
         </Routes>
         <Footer />
       </Router>

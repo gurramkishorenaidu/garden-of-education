@@ -3,10 +3,13 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 // import Slider from "../components/Slider";
-import image from "../assets/undraw_teaching.svg";
+
 // import Counter from "../components/Counter";
 
 import Slider1 from "../components/Slider1";
+// import Counter from "../components/Counter";
+import Stats from "../components/Stats";
+import LottieImage from "../components/LottieImage";
 
 const gradeOptions = [
   { value: "", label: "Choose Grade" },
@@ -22,7 +25,6 @@ const gradeOptions = [
   { value: 3, label: "3" },
   { value: 2, label: "2" },
   { value: 1, label: "1" },
-  
 ];
 
 const curriculumOptions = [
@@ -36,10 +38,13 @@ const curriculumOptions = [
 const Home = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-green-100 min-h-screen">
-        <div className="bg-green-100 pt-16 pl-6">
-          <img src={image} alt="banner" />
-        </div>
+      <Stats />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-green-100">
+        {/* <div className="bg-green-100 pt-14 pl-6">
+          <img src={image} alt="banner" height={700} width={700}/>
+        </div> */}
+        <LottieImage />
 
         <div className="mt-8">
           <Formik
@@ -72,12 +77,12 @@ const Home = () => {
             }}
           >
             {({ isSubmitting }) => (
-              <div className="bg-white rounded-sm shadow-lg dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 ml-32">
-                <Form className="py-8 max-w-[80%] m-auto ">
-                  <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white text-center mb-6">
+              <div className="bg-white rounded-sm shadow-lg dark:border md:mt-1 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 ml-32">
+                <Form className="py-4 max-w-[70%] m-auto ">
+                  <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-xl dark:text-white text-center mb-4">
                     Sign up now for the FREE DISCOVER PROGRAM!
                   </h1>
-                  <div className="space-y-4">
+                  <div className="space-y-2">
                     <Field
                       as="select"
                       name="grade"
@@ -185,9 +190,11 @@ const Home = () => {
           </Formik>
         </div>
       </div>
+      {/* <Stats /> */}
+      {/* <Counter /> */}
       <Slider1 />
       {/* <Counter /> */}
-      
+
       {/* <FontAwesomeIcon icon={faWhatsapp} /> */}
     </>
   );
